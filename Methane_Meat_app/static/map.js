@@ -36,7 +36,7 @@ function drawMap(geoData, climateData, year, dataType) {
 
   var domains = {
     emissions: [0, 2.5e5, 1e6, 5e6],
-    emissionsPerCapita: [0, 0.5, 2, 10]
+    emissionsPerCapita: [0.001, 0.002, 0.003, 0.005]
   };
 
   var mapColorScale = d3.scaleLinear()
@@ -71,7 +71,7 @@ function drawMap(geoData, climateData, year, dataType) {
       });
 
   d3.select(".map-title")
-      .text("Carbon dioxide " + graphTitle(dataType) + ", " + year);
+      .text("Methane " + graphTitle(dataType) + ", " + year);
 }
 
 function graphTitle(str) {
