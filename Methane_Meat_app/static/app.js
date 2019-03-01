@@ -1,4 +1,4 @@
-// ds.queue is a JS library that works with multiple asynchronious functions
+// d3.queue is a JS library that works with multiple asynchronious functions
 d3.queue()
 //makes 2 requests for topojson file and emissions_data.csv
   .defer(d3.json, "//unpkg.com/world-atlas@1.1.4/world/50m.json")
